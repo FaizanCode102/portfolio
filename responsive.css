@@ -57,7 +57,7 @@
         max-width: 150px;
         margin: 0 auto 16px;
         text-align: center;
-        padding: 10px  16px;
+        padding: 10px 16px;
         background-color: rgb(46, 15, 75);
         color: white;
         text-decoration: none;
@@ -70,7 +70,7 @@
 
 @media only screen and (max-width: 950px) {
 
-    .row {
+    .contact_row {
         display: block;
     }
 
@@ -80,9 +80,13 @@
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     header {
         background-image: url(images/tab-img.jpg);
+    }
+
+    .row {
+        display: block;
     }
 
     .about-col-1 img {
@@ -173,7 +177,6 @@
 
 }
 
-
 @media only screen and (max-width: 320px) {
     .logo {
         width: 100px;
@@ -205,5 +208,11 @@
 
     .social-icons a {
         font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 600px) {
+    .about-col-1 img {
+        width: 70%;
     }
 }
