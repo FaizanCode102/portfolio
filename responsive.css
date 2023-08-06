@@ -1,0 +1,162 @@
+/* ----------CSS FOR SMALL SCREEN---------- */
+@media only screen and (max-width: 1200px) {
+    .navbar ul li {
+        margin-left: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    .header-text {
+        margin-top: 200px;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        float: right;
+        /* Show the hamburger menu icon on smaller screens */
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(-45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(45deg);
+    }
+
+    .mobile_navbar .mobile_navmenu {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        min-height: 100vh;
+        z-index: 1;
+        background-color: rgb(10, 10, 10);
+        padding-top: 120px;
+    }
+
+    .mobile_navbar .mobile_navmenu.active {
+        right: 0;
+    }
+
+    .mobile_navbar .mobile_navmenu a {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto 16px;
+        text-align: center;
+        padding: 12px 16px;
+        background-color: brown;
+        color: white;
+        text-decoration: none;
+    }
+
+    .mobile_navbar .mobile_navmenu a:hover {
+        background-color: rgb(222, 78, 78);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .row {
+        display: block;
+    }
+
+    header {
+        background-image: url(images/tab-img.jpg);
+    }
+
+    .about-col-1 img {
+        width: 50%;
+    }
+
+    #about {
+        padding: 40px 0px;
+    }
+
+    .about-col-2 {
+        padding-top: 50px;
+    }
+
+    .about-col-2 p {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    header {
+        background-image: url(images/phone-img.jpg);
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .header-text h2 {
+        font-size: 15px;
+    }
+
+    .btn {
+        margin-top: 40px;
+    }
+
+    .btn.btn2 {
+        margin-bottom: 80px;
+    }
+
+    .sub-title {
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    .about-col-1 img {
+        width: 100%;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .tab-titles {
+        display: block;
+    }
+
+    .tab-links.active-link::after {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .logo {
+        width: 120px;
+    }
+
+    .header-text h1 {
+        font-size: 25px;
+    }
+
+    .header-text h2 {
+        font-size: 15px;
+    }
+
+}

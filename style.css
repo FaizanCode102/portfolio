@@ -12,9 +12,10 @@ body {
 
 html {
     scroll-behavior: smooth;
+
 }
 
-#header {
+header {
     width: 100%;
     height: 100vh;
     background-image: url(images/faiz.jpg);
@@ -26,7 +27,29 @@ html {
     padding: 10px 10%;
 }
 
-nav {
+.hamburger {
+    z-index: 2;
+    cursor: pointer;
+    display: none;
+    /* Hide the hamburger menu icon on larger screens */
+}
+
+.mobile_navbar .mobile_navmenu {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    -webkit-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,13 +61,13 @@ nav {
     width: 200px;
 }
 
-nav ul li {
+.navbar ul li {
     display: inline-block;
     list-style: none;
     margin-left: 80px;
 }
 
-nav ul li a {
+.navbar ul li a {
     color: #fff;
     text-decoration: none;
     letter-spacing: 0.5px;
@@ -54,7 +77,7 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a::after {
+.navbar ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -65,9 +88,11 @@ nav ul li a::after {
     transition: 0.3s;
 }
 
-nav ul li a:hover::after {
+.navbar ul li a:hover::after {
     width: 100%;
 }
+
+
 
 .header-text {
     margin-top: 25%;
@@ -131,6 +156,7 @@ nav ul li a:hover::after {
 
 .about-col-2 {
     flex-basis: 60%;
+
 }
 
 .sub-title {
@@ -175,7 +201,7 @@ nav ul li a:hover::after {
 width: 100%;
 } */
 .tab-links.active-link::after {
-    width: 50%;
+    width: 80%;
 }
 
 .tab-contents ul li {
@@ -216,6 +242,10 @@ width: 100%;
     height: 400px;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div:hover {
+    transform: translateY(-10px);
 }
 
 .services-list div i {
@@ -352,14 +382,25 @@ width: 100%;
     margin-top: 30px;
 }
 
-.contact-left p i {
+.contact-left .fas {
+    text-decoration: none;
     color: #009acd;
-    margin-right: 15px;
     font-size: 25px;
+    padding-top: 20px;
+}
+
+.contact-left .fas span {
+    color: #ababab;
+    padding-left: 15px;
+    font-size: 20px;
+    font-family: seri;
+    letter-spacing: 0.5px;
+
 }
 
 .social-icons {
     margin-top: 30px;
+    font-size: 0px;
 }
 
 .social-icons a {
@@ -385,12 +426,13 @@ width: 100%;
 }
 
 .btn.btn3 {
-    margin-top: 30px;
+    margin-top: 0px;
     border: none;
 }
 
 .contact-right form {
     width: 100%;
+    margin-top: -20px;
 }
 
 form input,
@@ -400,7 +442,7 @@ form textarea {
     outline: none;
     background: #262626;
     padding: 15px;
-    margin: 15px 0;
+    margin: 20px 0px;
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
@@ -429,57 +471,4 @@ footer span {
 
 nav .fas {
     display: none;
-}
-
-/* ----------CSS FOR SMALL SCREEN---------- */
-@media only screen and (max-width: 600px) {
-
-    /* Adjust the header image and text size for small screens */
-    #header {
-        background-image: url(images/phone-faizan.jpg);
-        height: 100vh;
-    }
-
-    .header-text {
-        margin-top: 70%;
-        font-size: 16px;
-    }
-
-    .header-text h1 {
-        font-size: 30px;
-    }
-
-    /* Show the navigation menu on small screens */
-    nav ul {
-        display: none;
-    }
-
-    nav .fas {
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul {
-        background: #b54768;
-        position: fixed;
-        top: 0;
-        width: 200px;
-        /* Increased the width to accommodate the menu items */
-        right: 0;
-        height: 100vh;
-        padding-top: 50px;
-        transform: translateX(200px);
-        /* Off-canvas menu, initially hidden */
-        transition: transform 0.3s ease-in-out;
-    }
-
-    nav ul.show {
-        transform: translateX(0);
-        /* Show the menu when 'show' class is applied */
-    }
-
-    nav ul li {
-        display: block;
-        margin: 25px;
-    }
 }
