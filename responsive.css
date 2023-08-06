@@ -54,11 +54,11 @@
     .mobile_navbar .mobile_navmenu a {
         display: block;
         width: 100%;
-        max-width: 200px;
+        max-width: 150px;
         margin: 0 auto 16px;
         text-align: center;
-        padding: 12px 16px;
-        background-color: brown;
+        padding: 10px  16px;
+        background-color: rgb(46, 15, 75);
         color: white;
         text-decoration: none;
     }
@@ -68,11 +68,19 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 950px) {
+
     .row {
         display: block;
     }
 
+    .btn.btn2 {
+        margin-bottom: 70px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
     header {
         background-image: url(images/tab-img.jpg);
     }
@@ -104,6 +112,10 @@
         width: 150px;
     }
 
+    .header-text {
+        margin-top: 250px;
+    }
+
     .header-text h1 {
         font-size: 30px;
     }
@@ -116,12 +128,12 @@
         margin-top: 40px;
     }
 
-    .btn.btn2 {
-        margin-bottom: 80px;
-    }
-
     .sub-title {
         font-size: 30px;
+    }
+
+    footer p {
+        font-size: 10px;
     }
 
 }
@@ -159,4 +171,39 @@
         font-size: 15px;
     }
 
+}
+
+
+@media only screen and (max-width: 320px) {
+    .logo {
+        width: 100px;
+    }
+
+    .header-text h1 {
+        font-size: 20px;
+    }
+
+    .header-text h2 {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .sub-title {
+        font-size: 25px;
+    }
+
+    .contact-left .fas {
+        font-size: 25px;
+    }
+
+    .contact-left .fas span {
+        font-size: 15px;
+    }
+
+    .social-icons a {
+        font-size: 25px;
+    }
 }
