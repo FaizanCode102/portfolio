@@ -43,7 +43,7 @@
         width: 100%;
         min-height: 100vh;
         z-index: 1;
-        background-color: rgb(10, 10, 10);
+        background-color: rgb(17, 17, 17);
         padding-top: 120px;
     }
 
@@ -58,13 +58,15 @@
         margin: 0 auto 16px;
         text-align: center;
         padding: 10px 16px;
-        background-color: rgb(46, 15, 75);
+        font-weight: bold;
+        font-size: 20px;
         color: white;
         text-decoration: none;
+        transition: 0.3s;
     }
 
     .mobile_navbar .mobile_navmenu a:hover {
-        background-color: rgb(222, 78, 78);
+        color: #009acd;
     }
 }
 
@@ -74,10 +76,9 @@
         display: block;
     }
 
-    .btn.btn2 {
-        margin-bottom: 70px;
+    .contact-right {
+        margin-top: 50px;
     }
-
 }
 
 @media only screen and (max-width: 800px) {

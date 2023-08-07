@@ -214,6 +214,12 @@ width: 100%;
     font-size: 14px;
 }
 
+.tab-contents ul li a {
+    color: #009acd;
+    font-size: 14px;
+    text-decoration: none;
+}
+
 .tab-contents {
     display: none;
 }
@@ -378,6 +384,14 @@ width: 100%;
     flex-basis: 60%;
 }
 
+.contact-left .sub-field {
+    font-size: 30px;
+    margin-top: 60px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ababab;
+}
+
 .contact-left p {
     margin-top: 30px;
 }
@@ -419,10 +433,6 @@ width: 100%;
 
 .btn.btn1 {
     margin: 50px auto;
-}
-
-.btn.btn2 {
-    display: inline-block;
 }
 
 .btn.btn3 {
