@@ -58,7 +58,14 @@ header {
 }
 
 .logo {
-    width: 200px;
+    text-transform: capitalize;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: verdana;
+    letter-spacing: 1px;
+}
+.logo span{
+    color: #009acd;
 }
 
 .navbar ul li {
@@ -99,7 +106,7 @@ header {
 }
 
 .header-text h1 {
-    color: wheat;
+    color: white;
     letter-spacing: 2px;
     font-size: 40px;
     text-transform: uppercase;
