@@ -134,6 +134,7 @@ header {
     font-weight: 600;
     text-transform: capitalize;
     transition: background 0.5s;
+    cursor: pointer;
 }
 
 .btn:hover {
