@@ -1,3 +1,15 @@
+loader
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("showcontent").style.display = "block";
+};
+
 document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.querySelector('.hamburger');
     const mobile_navmenu = document.querySelector('.mobile_navmenu');

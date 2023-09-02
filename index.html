@@ -12,195 +12,204 @@
     <link rel="icon" type="image" href="images/favicon.ico">
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
 
-    <!-- Header -->
-    <header class="container">
-        <nav class="navbar">
-            <div class="logo">faiz<span>an</span> </div>
-            <ul class="navMenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Works</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Loader -->
+    <div id="loader" class="lds-facebook">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- content-section -->
+    <div style="display:none;" id="showcontent" class="animate-bottom">
+        <!-- Header -->
+        <header class="container">
+            <nav class="navbar">
+                <div class="logo">faiz<span>an</span> </div>
+                <ul class="navMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburgerMenu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+            <div class="header-text">
+                <h1>Hi,<br> I'm faizan khan</h1>
+                <h2>Web Developer</h2>
+            </div>
+            <a class="btn" href="#contact">contact</a>
+        </header>
+        <nav class="mobile_navbar">
+            <ul class="mobile_navmenu" id="mobileNavMenu">
+                <a class="navLinks" href="#">Home</a>
+                <a class="navLinks" href="#about">About</a>
+                <a class="navLinks" href="#services">Services</a>
+                <a class="navLinks" href="#portfolio">Works</a>
+                <a class="navLinks" href="#contact">Contact</a>
             </ul>
-            <div class="hamburger" id="hamburgerMenu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
         </nav>
-        <div class="header-text">
-            <h1>Hi,<br> I'm faizan khan</h1>
-            <h2>Web Developer</h2>
-        </div>
-        <a class="btn" href="#contact">contact</a>
-    </header>
-    <nav class="mobile_navbar">
-        <ul class="mobile_navmenu" id="mobileNavMenu">
-            <a class="navLinks" href="#">Home</a>
-            <a class="navLinks" href="#about">About</a>
-            <a class="navLinks" href="#services">Services</a>
-            <a class="navLinks" href="#portfolio">Works</a>
-            <a class="navLinks" href="#contact">Contact</a>
-        </ul>
-    </nav>
-    </div>
-    <!-- ----------ABOUT---------- -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/d3.jpg">
+        <!-- ----------ABOUT---------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/d3.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <div>
+                            <h1 class="sub-title">About</h1>
+                            <p>I am a B.Tech (CS) student with a specialization in Artificial Intelligence, Machine
+                                Learning, and Deep Learning. I am
+                                passionate about the power of technology to transform our world, I am pursuing my
+                                Bachelor's degree in Computer Science
+                                with specialization (AI+ML+DL) from Teerthanker Mahaveer University (Moradabad), where I
+                                have been able to develop my
+                                technical skills and knowledge.
+                                Throughout my academic journey, I have gained experience in various programming
+                                languages such as Python, Java &
+                                Javascript and I am always eager to learn new skills and explore different domains of
+                                computer science, including
+                                artificial intelligence, machine learning, web development, software development and
+                                cybersecurity.
+                            </p>
+                        </div>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                            <p class="tab-links" onclick="openTab('Certifications')">Certifications</p>
+                            <p class="tab-links" onclick="openTab('Resume')">Resume</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>Web Development<br><span>Building Website / Web Apps</span></li>
+                                <li>Worldpress Development<br><span>Database Management / SEO / Hosting</span></li>
+                                <li>App Development<br><span>Building Android / iOS apps</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Certifications">
+                            <ul>
+                                <li>Web Development offered by Coursera<br><a href="images/Certificate.pdf"
+                                        download>View</a></li>
+                                <li>Entrepreneurship Development Programme<br><a href="/" download>View</a></li>
+                                <li>Internship at eKart ecommerce. <br><a href="/" download>View</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>Bachelor of Technology CSE-(AI)<br><span>2021-Current</span></li>
+                                <li>Intermediate<br><span>2021</span></li>
+                                <li>High School<br><span>2019</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Resume">
+                            <ul>
+                                <li><a href="images/my-resume.pdf" download>Download</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-col-2">
+            </div>
+        </div>
+        <!-- ----------SERVICES------------>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Services</h1>
+                <div class="services-list">
                     <div>
-                        <h1 class="sub-title">About</h1>
-                        <p>I am a B.Tech (CS) student with a specialization in Artificial Intelligence, Machine
-                            Learning, and Deep Learning. I am
-                            passionate about the power of technology to transform our world, I am pursuing my
-                            Bachelor's degree in Computer Science
-                            with specialization (AI+ML+DL) from Teerthanker Mahaveer University (Moradabad), where I
-                            have been able to develop my
-                            technical skills and knowledge.
-                            Throughout my academic journey, I have gained experience in various programming
-                            languages such as Python, Java &
-                            Javascript and I am always eager to learn new skills and explore different domains of
-                            computer science, including
-                            artificial intelligence, machine learning, web development, software development and
-                            cybersecurity.
-                        </p>
+                        <i class="fa-brands fa-android"></i>
+                        <h2>App Development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquam nam sit. Soluta quasi
+                            officia, alias vitae fugiat fuga exercitationem.</p>
+                        <a href="#">Learn more</a>
                     </div>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                        <p class="tab-links" onclick="openTab('education')">Education</p>
-                        <p class="tab-links" onclick="openTab('Certifications')">Certifications</p>
-                        <p class="tab-links" onclick="openTab('Resume')">Resume</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li>Web Development<br><span>Building Website / Web Apps</span></li>
-                            <li>Worldpress Development<br><span>Database Management / SEO / Hosting</span></li>
-                            <li>App Development<br><span>Building Android / iOS apps</span></li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Certifications">
-                        <ul>
-                            <li>Web Development offered by Coursera<br><a href="images/Certificate.pdf"
-                                    download>View</a></li>
-                            <li>Entrepreneurship Development Programme<br><a href="/" download>View</a></li>
-                            <li>Internship at eKart ecommerce. <br><a href="/" download>View</a></li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li>Bachelor of Technology CSE-(AI)<br><span>2021-Current</span></li>
-                            <li>Intermediate<br><span>2021</span></li>
-                            <li>High School<br><span>2019</span></li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Resume">
-                        <ul>
-                            <li><a href="images/my-resume.pdf" download>Download</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ----------SERVICES------------>
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-brands fa-android"></i>
-                    <h2>App Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquam nam sit. Soluta quasi
-                        officia, alias vitae fugiat fuga exercitationem.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquam nam sit. Soluta quasi
-                        officia, alias vitae fugiat fuga exercitationem.</p>
-                    <a href="#">Learn more</a>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquam nam sit. Soluta quasi
+                            officia, alias vitae fugiat fuga exercitationem.</p>
+                        <a href="#">Learn more</a>
 
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquam nam sit. Soluta quasi
-                        officia, alias vitae fugiat fuga exercitationem.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ----------WORK--------- -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">Works</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png" alt="">
-                    <div class="layer">
-                        <h2>Social Media App</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam facere quibusdam
-                            deserunt dolore vero. Incidunt ea nihil sint. Velit.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png" alt="">
-                    <div class="layer">
-                        <h2>Music App</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam facere quibusdam
-                            deserunt dolore vero. Incidunt ea nihil sint. Velit.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="">
-                    <div class="layer">
-                        <h2>Online Shopping App</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam facere quibusdam
-                            deserunt dolore vero. Incidunt ea nihil sint. Velit.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquam nam sit. Soluta quasi
+                            officia, alias vitae fugiat fuga exercitationem.</p>
+                        <a href="#">Learn more</a>
                     </div>
                 </div>
             </div>
-            <a href="" class="btn btn1">See more</a>
         </div>
-    </div>
-    <!-- ----------CONTACT---------- -->
-    <div id="contact">
-        <div class="container">
-            <div class="row contact_row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact</h1>
-                    <h1 class="sub-field">Get in touch</h1>
-                    <a href="mailto:faizank9058@gmail.com"
-                        class="fas fa-paper-plane"><span>faizank9058@gmail.com</span></a>
-                    <br>
-                    <a href="tel:+911187961267" class="fas fa-phone-square-alt"><span>1187961267</span></a>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/faizan-khan-84b640264/"><i class="fab fa-linkedin"></i></a>
-                        <a href=" "><i class="fab fa-twitter-square"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=100030858562675"><i
-                                class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/faizan_02.k/"><i class="fab fa-instagram"></i></a>
+        <!-- ----------WORK--------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Works</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="">
+                        <div class="layer">
+                            <h2>Social Media App</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam facere quibusdam
+                                deserunt dolore vero. Incidunt ea nihil sint. Velit.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="">
+                        <div class="layer">
+                            <h2>Music App</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam facere quibusdam
+                                deserunt dolore vero. Incidunt ea nihil sint. Velit.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="">
+                        <div class="layer">
+                            <h2>Online Shopping App</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam facere quibusdam
+                                deserunt dolore vero. Incidunt ea nihil sint. Velit.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Name" required>
-                        <input type="email" name="Email" placeholder="Email" required>
-                        <textarea name="Message" rows="10" placeholder="Message"></textarea>
-                        <button type="submit" class="btn btn3">submit</button>
-                    </form>
+                <a href="" class="btn btn1">See more</a>
+            </div>
+        </div>
+        <!-- ----------CONTACT---------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row contact_row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact</h1>
+                        <h1 class="sub-field">Get in touch</h1>
+                        <a href="mailto:faizank9058@gmail.com"
+                            class="fas fa-paper-plane"><span>faizank9058@gmail.com</span></a>
+                        <br>
+                        <a href="tel:+911187961267" class="fas fa-phone-square-alt"><span>1187961267</span></a>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/faizan-khan-84b640264/"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href=" "><i class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100030858562675"><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/faizan_02.k/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Name" required>
+                            <input type="email" name="Email" placeholder="Email" required>
+                            <textarea name="Message" rows="10" placeholder="Message"></textarea>
+                            <button type="submit" class="btn btn3">submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -208,7 +217,6 @@
             <p>all right reserved | created by <span>@faizan</span></p>
         </footer>
     </div>
-
 </body>
 
 <script src="js/script.js"></script>

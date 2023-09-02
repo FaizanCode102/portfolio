@@ -16,7 +16,22 @@
     .navbar ul li {
         margin-left: 50px;
     }
+
 }
+
+@media only screen and (max-width:1440px) {
+    .lds-facebook {
+        left: 53%;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .lds-facebook {
+        left: 53%;
+    }
+}
+
+
 
 @media only screen and (max-width: 1070px) {
     .row {
@@ -33,6 +48,10 @@
 
     .contact-right {
         margin-top: 50px;
+    }
+
+    .lds-facebook {
+        left: 56%;
     }
 }
 
@@ -105,6 +124,10 @@
     header {
         background-image: url(/images/tab-img.jpg);
     }
+
+    .lds-facebook {
+        left: 58%;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -124,6 +147,11 @@
     .tab-links.active-link::after {
         width: 20%;
     }
+
+    .lds-facebook {
+        left: 60%;
+    }
+
 }
 
 @media only screen and (max-width: 460px) {
@@ -156,6 +184,10 @@
         font-size: 10px;
     }
 
+    .lds-facebook {
+        left: 62%;
+    }
+
 }
 
 @media only screen and (max-width: 360px) {
@@ -170,6 +202,10 @@
 
     .header-text h2 {
         font-size: 15px;
+    }
+
+    .lds-facebook {
+        left: 63%;
     }
 
 }
