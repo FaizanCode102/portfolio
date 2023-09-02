@@ -143,9 +143,6 @@
         width: 20%;
     }
 
-    .lds-facebook {
-        left: 60%;
-    }
 
 }
 
@@ -179,9 +176,6 @@
         font-size: 10px;
     }
 
-    .lds-facebook {
-        left: 62%;
-    }
 
 }
 
@@ -200,7 +194,7 @@
     }
 
     .lds-facebook {
-        left: 63%;
+        left: 60%;
     }
 
 }
