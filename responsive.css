@@ -25,11 +25,6 @@
     }
 }
 
-@media only screen and (min-width:1200px) {
-    .lds-facebook {
-        left: 53%;
-    }
-}
 
 
 
@@ -122,7 +117,7 @@
 
 @media only screen and (max-width: 768px) {
     header {
-        background-image: url(/images/tab-img.jpg);
+        background-image: url(images/tab-img.jpg);
     }
 
     .lds-facebook {
@@ -133,7 +128,7 @@
 @media only screen and (max-width: 575px) {
 
     header {
-        background-image: url(/images/phone-img.jpg);
+        background-image: url(images/phone-img.jpg);
     }
 
     .about-col-1 img {
