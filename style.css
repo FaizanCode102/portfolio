@@ -7,12 +7,17 @@
 
 body {
     background: #050505;
-    color: #fff;
+    color: var(--font-color);
 }
 
 html {
     scroll-behavior: smooth;
 
+}
+
+:root{
+    --btn-color:#009acd;
+    --font-color: #fff;
 }
 
 /* Loader */
@@ -32,7 +37,7 @@ html {
     position: absolute;
     left: 8px;
     width: 16px;
-    background: #fff;
+    background: var(--font-color);
     animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
 
@@ -129,7 +134,7 @@ header {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: var(--font-color);
     margin: 5px 0;
     -webkit-transition: all ease-in-out 0.3s;
     transition: all ease-in-out 0.3s;
@@ -153,7 +158,7 @@ header {
 }
 
 .logo span {
-    color: #009acd;
+    color: var(--btn-color);
 }
 
 .navbar ul li {
@@ -163,7 +168,7 @@ header {
 }
 
 .navbar ul li a {
-    color: #fff;
+    color: var(--font-color);
     text-decoration: none;
     letter-spacing: 0.5px;
     text-transform: capitalize;
@@ -176,7 +181,7 @@ header {
     content: '';
     width: 0;
     height: 3px;
-    background: #009acd;
+    background: var(--btn-color);
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -192,7 +197,7 @@ header {
 }
 
 .header-text h1 {
-    color: white;
+    color: var(--font-color);
     letter-spacing: 2px;
     font-size: 40px;
     text-transform: uppercase;
@@ -212,7 +217,7 @@ header {
     width: fit-content;
     padding: 12px 40px;
     border-radius: 50px;
-    color: white;
+    color: var(--font-color);
     text-decoration: none;
     font-size: 18px;
     letter-spacing: 0.5px;
@@ -220,8 +225,8 @@ header {
     text-transform: capitalize;
     cursor: pointer;
 
-    background: linear-gradient(to right, white 50%, #009acd 50%);
-    background-size: 200% 100%;
+    background: linear-gradient(to right, var(--font-color) 50%, var(--btn-color) 50%);
+    background-size: 201% 100%;
     background-position: right bottom;
     transition: all 0.5s ease-out;
 }
@@ -234,7 +239,7 @@ header {
 /* ----------ABOUT---------- */
 #about {
     padding: 80px 0px;
-    color: #ababab;
+    color: var(--font-color);
 }
 
 .row {
@@ -261,7 +266,7 @@ header {
     font-size: 40px;
     letter-spacing: 1px;
     font-weight: 600;
-    color: #009acd;
+    color: var(--btn-color);
 }
 
 .about-col-2 p {
@@ -288,7 +293,7 @@ header {
     content: '';
     width: 0;
     height: 3px;
-    background: #009acd;
+    background: var(--btn-color);
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -305,12 +310,12 @@ header {
 }
 
 .tab-contents ul li span {
-    color: #009acd;
+    color: var(--btn-color);
     font-size: 14px;
 }
 
 .tab-contents ul li a {
-    color: #009acd;
+    color: var(--btn-color);
     font-size: 14px;
     text-decoration: none;
 }
@@ -352,7 +357,7 @@ header {
 .services-list div i {
     font-size: 50px;
     margin-bottom: 20px;
-    color: #009acd;
+    color: var(--btn-color);
 }
 
 .services-list div h2 {
@@ -368,7 +373,7 @@ header {
 
 .services-list div a {
     text-decoration: none;
-    color: white;
+    color: var(--font-color);
     font-size: 14px;
     margin-top: 20px;
     letter-spacing: 0.5px;
@@ -380,7 +385,7 @@ header {
     content: '';
     width: 0;
     height: 2px;
-    background: #009acd;
+    background: var(--btn-color);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -420,7 +425,7 @@ header {
 .layer {
     width: 100%;
     height: 0;
-    background: #009acd;
+    background: var(--btn-color);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -453,7 +458,7 @@ header {
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: var(--font-color);
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -484,7 +489,7 @@ header {
     margin-top: 60px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #ababab;
+    color: var(--font-color);
 }
 
 .contact-left p {
@@ -493,13 +498,13 @@ header {
 
 .contact-left .fas {
     text-decoration: none;
-    color: #009acd;
+    color: var(--btn-color);
     font-size: 25px;
     padding-top: 20px;
 }
 
 .contact-left .fas span {
-    color: #ababab;
+    color:var(--font-color);
     padding-left: 15px;
     font-size: 20px;
     font-family: seri;
@@ -516,13 +521,13 @@ header {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: var(--font-color);
     display: inline-block;
     transition: color 0.5s, transform 0.5s;
 }
 
 .social-icons a:hover {
-    color: #009acd;
+    color: var(--btn-color);
     transform: translateY(-5px);
 }
 
@@ -548,7 +553,7 @@ form textarea {
     background: #262626;
     padding: 15px;
     margin: 20px 0px;
-    color: #fff;
+    color: var(--font-color);
     font-size: 18px;
     border-radius: 6px;
 }
@@ -566,12 +571,12 @@ footer {
 footer p {
     text-transform: capitalize;
     font-size: 15px;
-    font-family: serif;
+    /* font-family: serif; */
     letter-spacing: 0.5px;
 }
 
 footer span {
-    color: #009acd;
+    color: var(--btn-color);
 }
 
 nav .fas {
