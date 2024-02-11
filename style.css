@@ -379,6 +379,7 @@ header {
     letter-spacing: 0.5px;
     display: inline-block;
     position: relative;
+    color: burlywood;
 }
 
 .services-list div a::after {
