@@ -25,7 +25,7 @@
         <!-- Header -->
         <header class="container">
             <nav class="navbar">
-                <div class="logo">faiz<span>an</span> </div>
+                <div class="logo">faiz<span class="an">an</span> </div>
                 <ul class="navMenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -194,18 +194,18 @@
                         </div>
                     </div>
                     <div class="contact-right">
-                        <form action="">
-                            <input id="SendName" type="text" name="Name" placeholder="Name" required>
-                            <input id="SendEmail" type="email" name="Email" placeholder="Email" required>
-                            <textarea id="SendMassege" name="Message" rows="10" placeholder="Message"></textarea>
-                            <button type="submit" class="btn btn3" onclick="FormSubmit()">submit</button>
+                        <form action="connect.php" method="post">
+                            <input id="fullname" type="text" name="fullname" placeholder="Name" required>
+                            <input id="email" type="email" name="email" placeholder="Email" required>
+                            <textarea id="message" name="message" rows="10" placeholder="Message"></textarea>
+                            <input type="submit" class="btn btn3">
                         </form>
                     </div>
                 </div>
             </div>
         </div>
         <footer>
-            <p>all right reserved | created by <span>@faizan</span></p>
+            <p>all right reserved | created by <a>@faiz<span class="an">an</span></a></p>
         </footer>
     </div>
 </body>
