@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -132,18 +133,12 @@ header {
 
 .bar {
     display: block;
-    margin-top: 50px;
-    width: fit-content;
-    padding: 10px 25px;
-    border-radius: 5px;
-    color: var(--font-color);
-    text-decoration: none;
-    font-size: 20px;
-    letter-spacing: 0.5px;
-    font-weight: 600;
-    text-transform: capitalize;
-    cursor: pointer;
-    background-color: var(--btn-color);
+    width: 25px;
+    height: 3px;
+    background-color: var(--font-color);
+    margin: 5px 0;
+    -webkit-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
 
 }
 
@@ -153,6 +148,9 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 25px;
+    /* position: fixed; */
+    /* z-index: 1; */
+    /* background: #e44444; */
 }
 
 .logo {
@@ -163,7 +161,7 @@ header {
     letter-spacing: 1px;
 }
 
-.an{
+.an {
     color: var(--btn-color);
 }
 
@@ -231,11 +229,10 @@ header {
     text-transform: capitalize;
     cursor: pointer;
     background-color: var(--btn-color);
-    transition: 0.2s ease-out;
 }
 
 .btn:hover {
-    background-color: #007ea8;
+    background-color: #0083ae;
 }
 
 /* ----------ABOUT---------- */
@@ -578,8 +575,9 @@ footer p {
     letter-spacing: 0.5px;
 }
 
-/* footer span {
+/* footer a{
     color: var(--btn-color);
+
 } */
 
 nav .fas {
