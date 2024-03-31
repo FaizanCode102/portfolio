@@ -403,10 +403,17 @@ header {
 }
 
 .work-list {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 50px; */
+
+    /* new */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+
 }
 
 .work {
@@ -420,6 +427,11 @@ header {
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+
+    width: 350px; 
+    height: 450px; 
+    overflow: hidden; 
+    position: relative; 
 }
 
 .layer {
