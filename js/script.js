@@ -2,7 +2,7 @@ loader
 var myVar;
 
 function myFunction() {
-    myVar = setTimeout(showPage, 3000);
+    myVar = setTimeout(showPage, 0);
 }
 
 function showPage() {
@@ -49,3 +49,16 @@ function openTab(tabName) {
     event.currentTarget.classList.add('active-link');
     document.getElementById(tabName).classList.add('active-tab');
 }
+
+// for load more btn
+
+let seeMoreBtn = document.querySelector('#see-more');
+let currentItem = 3;
+
+seeMoreBtn.onclick = () => {
+    let work = document.querySelectorAll('.work');
+    for (let i = currentItem; i < currentItem + 3 && i < work.length; i++) {
+        work[i].style.display = 'inline-block';
+    }
+    currentItem += 3;
+};
