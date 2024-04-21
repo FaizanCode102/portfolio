@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="responsive.css">
     <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image" href="images/favicon.ico">
+    
 </head>
 
 <body onload="myFunction()" style="margin:0;">
@@ -228,7 +229,7 @@
                     <div class="contact-left">
                         <h1 class="sub-title">Contact</h1>
                         <h1 class="sub-field">Get in touch</h1>
-                        <a href="mailto:faizank9058@gmail.com"
+                        <a href="mailto:faizanwriteme@gmail.com"
                             class="fas fa-paper-plane"><span>faizanwriteme@gmail.com</span></a>
                         <br>
                         <a href="tel:+911187961267" class="fas fa-phone-square-alt"><span>1187961267</span></a>
@@ -242,11 +243,11 @@
                         </div>
                     </div>
                     <div class="contact-right">
-                        <form action="connect.php" method="post">
-                            <input id="fullname" type="text" name="fullname" placeholder="Name" required>
-                            <input id="email" type="email" name="email" placeholder="Email" required>
+                        <form id="myform">
+                            <input id="fullname" type="text" name="fullname" placeholder="Name" >
+                            <input id="email" type="email" name="email" placeholder="Email" >
                             <textarea id="message" name="message" rows="10" placeholder="Message"></textarea>
-                            <input type="submit" class="btn btn3">
+                            <input type="submit" class="btn btn3" name="submit" value="Submit">
                         </form>
                     </div>
                 </div>
@@ -258,4 +259,5 @@
     </div>
 </body>
 <script src="js/script.js"></script>
+<script src="js/customs.js"></script>
 </html>
