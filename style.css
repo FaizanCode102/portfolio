@@ -568,15 +568,19 @@ header {
 
 form input,
 form textarea {
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 20px 0px;
-    color: var(--font-color);
-    font-size: 18px;
-    border-radius: 6px;
+  width: 100%;
+  border: 1px solid rgb(104, 104, 104);
+  outline: none;
+  background: black;
+  padding: 15px;
+  margin: 20px 0px;
+  color: var(--font-color);
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+form input:focus,textarea:focus {
+  border: var(--btn-color) 1px solid;
 }
 
 /*---------FOOTER---------*/
